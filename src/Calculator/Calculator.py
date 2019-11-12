@@ -1,29 +1,10 @@
-import math
+from Calculator.addition import addition
+from Calculator.subtraction import subtraction
+from Calculator.multiplication import multiplication
+from Calculator.division import division
+from Calculator.square import square
+from Calculator.sqrt import sqrt
 
-
-def addition(a,b):
-    a=int(a)
-    b=int(b)
-    c=a+b
-    return int(c)
-
-def subtraction(a,b):
-    a=int(a)
-    b=int(b)
-    c=b-a
-    return int(c)
-
-def multiplication(a,b):
-    return int(a*b)
-
-def division(a,b):
-    return a/b
-
-def square(a):
-    return a ** 2
-
-def sqrt(a):
-    return math.sqrt(a)
 
 class Calculator:
     result=0

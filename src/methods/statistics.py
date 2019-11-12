@@ -3,7 +3,7 @@ from methods.median import median
 from methods.Mode import Mode
 from methods.popstand import popstand
 from methods.variance import variance
-from methods.CsvReader import CsvReader
+from CsvReader.CsvReader import CsvReader
 
 
 class Statistics(Calculator):
