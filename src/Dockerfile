@@ -1,5 +1,8 @@
-FROM python:3
 
-ADD src /src
+FROM python:3.7
 
-CMD [ "python", "./src/.py" ]
+ADD . .
+
+RUN pip install --upgrade pip
+
+CMD ["python", "-m", "unittest", "discover", "-s","testfiles"]
